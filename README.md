@@ -29,3 +29,11 @@ In order to run RedHat package management, a RedHat derivative distribution is r
 This can be run within a Docker container.
 
 * https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action
+
+The github action
+* https://github.com/MetOffice/rpmbuilding/blob/master/.github/workflows/simpleHelloDocker.yml
+calls and example action within a Centos container, as defined within
+* https://github.com/MetOffice/rpmbuilding/tree/master/simpleHelloDocker
+demonstrating the setup of the container.
+
+A new action, using a new folder with an adapted action.yml (always use this filename) and entrypoint.sh script can be defined using this template.
