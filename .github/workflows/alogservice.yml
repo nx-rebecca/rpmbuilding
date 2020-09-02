@@ -1,0 +1,14 @@
+on: [push, pull_request]
+
+jobs:
+  a_log_service_job:
+    runs-on: ubuntu-latest
+    name: 'a log service'
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: log service action step
+        uses: ./alogservice # Uses an action in the specified directory
+        id: buildDeploy

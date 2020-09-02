@@ -1,0 +1,5 @@
+name: 'a log service'
+description: 'build and install a logger via RPM and service'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
