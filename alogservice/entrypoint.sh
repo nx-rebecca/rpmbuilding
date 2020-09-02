@@ -48,7 +48,8 @@ echo 'systemctl start logservice'
 systemctl start logservice
 systemctl status logservice
 
+# let it write some logs
 sleep 9
 
+# prove to me that the logs exist
 cat /var/log/logservice.log
-

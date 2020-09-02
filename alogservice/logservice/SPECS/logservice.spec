@@ -7,6 +7,8 @@ License:        GPLv3
 Source0:        %{name}-%{version}.tar.bz2
 BuildArch:      noarch
 
+Requires:       python3
+
 %description
 This is really just a toy.
 
