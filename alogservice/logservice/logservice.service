@@ -1,0 +1,8 @@
+[Unit]
+Description=Log Service Demonstration
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/logservice/timelog.py
