@@ -16,7 +16,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - name: Checkout
+      uses: actions/checkout@v1
     # Runs a single command using the runners shell
     - name: Run script
-      run: echo $PATH
+      run: ./simpleArtifact/testrun.sh
       shell: bash
