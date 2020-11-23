@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
          name: output-text-file
-         path: /simpleArtifact/output.txt
+         path: output.txt
