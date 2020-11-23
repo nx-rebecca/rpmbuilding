@@ -16,9 +16,16 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    # Checks out repo
     - name: Checkout
       uses: actions/checkout@v1
-    # Runs a single command using the runners shell
+    # Runs a simple script which creates a text file
     - name: Run script
       run: ./simpleArtifact/testrun.sh
       shell: bash
+    # Upload the artifact
+    - name: Upload output file
+      uses: actions/upload-artifact@v1
+      with:
+         name: output-text-file
+         path: /simpleArtifact/output.txt
