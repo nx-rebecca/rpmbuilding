@@ -22,9 +22,9 @@ jobs:
     # Runs a simple script which creates a text file
     - name: Run script
       uses: ./simpleArtifactDocker # Uses an action in the specified directory
-    # Uploads the output file as an artifact
-    - name: Upload output file
+    # Uploads the output directory as an artifact
+    - name: Upload output directory
       uses: actions/upload-artifact@v1
       with:
-         name: output-text-file
-         path: output.txt
+         name: output-directory
+         path: ${GITHUB_REF##*/}
