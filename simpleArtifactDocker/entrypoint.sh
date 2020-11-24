@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-./testrun.sh
+./simpleArtifactDocker/testrun.sh
