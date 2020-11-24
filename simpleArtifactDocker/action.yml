@@ -1,5 +1,10 @@
 name: 'Simple Script with Docker'
 description: 'Run a script to create a file'
+inputs:
+  branch-or-tag-name: # id of input
+    description: 'Branch or tag name'
+    required: true
+    default: ${GITHUB_REF##*/}
 outputs:
   output-directory: #id of output
     description: 'Output directory'
@@ -7,4 +12,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${GITHUB_REF##*/}
+    - ${{ inputs.branch-or-tag-name }} 
