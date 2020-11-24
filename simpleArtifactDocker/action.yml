@@ -1,0 +1,8 @@
+name: 'Simple Script with Docker'
+description: 'Run a script to create a file'
+outputs:
+  output-text-file: #id of output
+    description: 'Output text file'
+runs:
+  using: 'docker'
+  image: 'Dockerfile' 
